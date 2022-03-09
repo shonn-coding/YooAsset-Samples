@@ -16,7 +16,7 @@ public class BootDemo : MonoBehaviour
 	{
 		var createParameters = new YooAssets.HostPlayModeParameters();
 		createParameters.LocationRoot = "Assets/GameRes";
-		createParameters.DecryptServices = null;
+		createParameters.DecryptionServices = null;
 		createParameters.ClearCacheWhenDirty = false;
 		createParameters.IgnoreResourceVersion = true;
 		createParameters.DefaultHostServer = GetHostServerURL();
