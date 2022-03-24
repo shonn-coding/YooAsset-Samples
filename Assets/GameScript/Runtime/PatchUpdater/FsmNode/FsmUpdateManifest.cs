@@ -10,7 +10,7 @@ public class FsmUpdateManifest : IFsmNode
 	void IFsmNode.OnEnter()
 	{
 		PatchEventDispatcher.SendPatchStepsChangeMsg(EPatchStates.UpdateManifest);
-		BootDemo.Instance.StartCoroutine(UpdateManifest());
+		BootScene.Instance.StartCoroutine(UpdateManifest());
 	}
 	void IFsmNode.OnUpdate()
 	{

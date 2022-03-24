@@ -8,7 +8,7 @@ public class FsmDownloadWebFiles : IFsmNode
 	void IFsmNode.OnEnter()
 	{
 		PatchEventDispatcher.SendPatchStepsChangeMsg(EPatchStates.DownloadWebFiles);
-		BootDemo.Instance.StartCoroutine(BeginDownload());
+		BootScene.Instance.StartCoroutine(BeginDownload());
 	}
 	void IFsmNode.OnUpdate()
 	{

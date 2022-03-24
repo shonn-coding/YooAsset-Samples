@@ -12,7 +12,7 @@ internal class FsmPatchInit : IFsmNode
 		var go = Resources.Load<GameObject>("PatchWindow");
 		GameObject.Instantiate(go);
 
-		BootDemo.Instance.StartCoroutine(Begin());
+		BootScene.Instance.StartCoroutine(Begin());
 	}
 	void IFsmNode.OnUpdate()
 	{

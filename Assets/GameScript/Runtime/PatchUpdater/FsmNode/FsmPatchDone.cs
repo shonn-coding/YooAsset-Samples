@@ -10,6 +10,8 @@ internal class FsmPatchDone : IFsmNode
 	{
 		PatchEventDispatcher.SendPatchStepsChangeMsg(EPatchStates.PatchDone);
 		Debug.Log("补丁流程更新完毕！");
+
+		YooAsset.YooAssets.LoadSceneAsync("Scene/Game");
 	}
 	void IFsmNode.OnUpdate()
 	{

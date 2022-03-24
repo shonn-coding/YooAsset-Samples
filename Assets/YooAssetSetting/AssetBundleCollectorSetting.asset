@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc54f0173b27fb40aee29e7eb3364da, type: 3}
   m_Name: AssetBundleCollectorSetting
   m_EditorClassIdentifier: 
-  IsCollectAllShaders: 0
+  AutoCollectShaders: 0
   ShadersBundleName: shaders
   Collectors:
   - CollectDirectory: Assets/GameRes/Entity/Level1/
@@ -36,7 +36,7 @@ MonoBehaviour:
     DontWriteAssetPath: 0
     AssetTags: buildin
   - CollectDirectory: Assets/GameRes/Config/
-    PackRuleName: PackDirectory
+    PackRuleName: PackRawFile
     FilterRuleName: CollectAll
     DontWriteAssetPath: 0
     AssetTags: other
@@ -46,7 +46,7 @@ MonoBehaviour:
     DontWriteAssetPath: 0
     AssetTags: other
   - CollectDirectory: Assets/GameRes/Texture/
-    PackRuleName: PackExplicit
+    PackRuleName: PackDirectory
     FilterRuleName: CollectAll
     DontWriteAssetPath: 0
     AssetTags: other

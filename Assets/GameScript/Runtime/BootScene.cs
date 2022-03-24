@@ -3,14 +3,20 @@ using System.Collections;
 using UnityEngine;
 using YooAsset;
 
-public class BootDemo : MonoBehaviour
+public class BootScene : MonoBehaviour
 {
-	public static BootDemo Instance { private set; get; }
+	public static BootScene Instance { private set; get; }
 
 	void Awake()
 	{
 		Instance = this;
-		DontDestroyOnLoad(gameObject);
+
+		Application.targetFrameRate = 60;
+		Application.runInBackground = true;
+	}
+	void OnDestroy()
+	{
+		Instance = null;
 	}
 	IEnumerator Start()
 	{

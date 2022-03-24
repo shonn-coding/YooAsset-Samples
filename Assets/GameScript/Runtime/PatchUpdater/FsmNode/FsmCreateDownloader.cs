@@ -10,7 +10,7 @@ public class FsmCreateDownloader : IFsmNode
 	void IFsmNode.OnEnter()
 	{
 		PatchEventDispatcher.SendPatchStepsChangeMsg(EPatchStates.CreateDownloader);
-		BootDemo.Instance.StartCoroutine(CreateDownloader());
+		BootScene.Instance.StartCoroutine(CreateDownloader());
 	}
 	void IFsmNode.OnUpdate()
 	{
@@ -24,7 +24,7 @@ public class FsmCreateDownloader : IFsmNode
 		yield return new WaitForSecondsRealtime(0.5f);
 
 		Debug.Log("创建补丁下载器.");
-		string[] tags = { "buildin", "other" };
+		string[] tags = { "buildin", "other", "level1" };
 		int downloadingMaxNum = 10;
 		int failedTryAgain = 3;
 		PatchUpdater.Downloader = YooAssets.CreatePatchDownloader(tags, downloadingMaxNum, failedTryAgain);

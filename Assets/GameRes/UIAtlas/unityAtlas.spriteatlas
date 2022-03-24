@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UIIcons
+  m_Name: unityAtlas
   serializedVersion: 2
   m_EditorData:
     serializedVersion: 2
@@ -52,6 +52,6 @@ SpriteAtlas:
   - Icon_Fireball_128
   - Icon_Deathkiss_128
   m_RenderDataMap: {}
-  m_Tag: UIIcons
+  m_Tag: unityAtlas
   m_IsVariant: 0
   m_IsPlaceholder: 0
